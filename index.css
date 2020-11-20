@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: #6c5ce7;
+    position: relative;
+    padding: 3%;
+}
+
+header label{
+    color: white;
+    font-size: 200%;
+    font-family: cursive;
+    opacity: 0.5;
+}
+
+header a{
+    color: white;
+    font-size: 200%;
+    font-family: cursive;
+}
+
+header h5{
+    float: right;
+    color: whitesmoke;
+}
+
+#mainBody{
+    padding-top: 1%;
+    position: relative;
+    background-color: #b5b0fc;
+    /*B5B0FC*/
+    text-align: center;
+    height: 20%;
+    background-blend-mode: lighten;
+}
+
+#mainBody input{
+    height: 30%;
+    font-size: 130%;
+    width: 70%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    position: inherit;
+}
+
+#mainBody button{
+    margin-top: 2%;
+    float: inline-end;
+    font-size: 130%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    align-self: center;
+    background-color: #0984e3;
+    border: solid 1px black;
+    color: white;
+    text-shadow: 5px 5px 20px white;
+    position: inherit;
+}
+
+#allNotes{
+    background-color: white;
+    height: 40%;
+    width: 100%;
+    transform-origin: bottom;
+    bottom: 0%;
+    position: absolute;
+    overflow-y: scroll;
+    transition: 0.5s;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    box-shadow: 0.1px 0.1px 10px #b2bec3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #2c3e50;
+}
+
+#expandBtn{
+    width: 20%;
+    background-color: #ecf0f1;
+    border: solid transparent 0px;
+    text-align: center;
+    color: black;
+}
+
+#allNotes div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #2c3e50;
+    padding-bottom: 5%;
+}
+
+#allNotes div div{
+    /*background-color: #f8c291;*/
+    background-color: whitesmoke;
+    border: dashed 2px;
+    width: 88%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+#allNotes label{
+    color: #2c3e50;
+    font-size: 150%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    max-width: 80%;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+#allNotes button{
+    background-color: #e74c3c;
+    border: solid #e74c3c 2px;
+    color: whitesmoke;
+    font-size: 120%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
