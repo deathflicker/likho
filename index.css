@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -28,7 +29,7 @@ header a{
 
 header h5{
     float: right;
-    color: whitesmoke;
+    color: #ecf0f1;
 }
 
 #mainBody{
@@ -141,4 +142,56 @@ header h5{
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+#instructions{
+    position: absolute;
+    z-index: 5;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 0%;
+    bottom: 0%;
+    transition: 0.5s;
+    font-family: sans-serif;
+    overflow-y: auto;
+}
+
+#instructions label{
+    float: right;
+    font-size: 200%;
+    padding: 2%;
+    background-color: transparent;
+    border: solid transparent 0px;
+    font-family: sans-serif;
+    color: black;
+}
+
+#instructions h1{
+    color: #4834d4;
+    margin-left: 2%;
+    width: 90%;
+    word-wrap: break-word;
+    max-width: 90%;
+    margin-top: 10%;
+    text-decoration: underline;
+}
+
+#instructions h3{
+    margin-left: 2%;
+    width: 86%;
+    word-wrap: break-word;
+    max-width: 86%;
+    margin-top: 2%;
+    background-color: white;
+    color: grey;
+    padding: 4%;
+}
+
+#instructions ul{
+    margin-left: 2%;
+    padding: 2%;
+}
+
+#instructions a{
+    text-decoration: none;
 }

@@ -20,11 +20,77 @@
              content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
         />
 
+
+
+        <!--Instructions Div-->
+        <div id="instructions">
+            <label onclick="hideHelp()">X</label>
+            <br>
+            <h1>What is this all about?</h1>
+            <h3>'Likho' is a new way of memorizing things. It works as a digital notepad. You can write your notes, day to day tasks or even birthdays of your special ones. But sadly, we do not offer database syncing, and hence your work will get erased as you reload the page.</h3>
+            <h1>How to get started?</h1>
+            <h3>
+                <ul>
+                    <li>
+                        First and foremost, write something in the provided textbox.
+                    </li>
+                    <br>
+                    <li>
+                        Select a color you would like to apply to your text.
+                    </li>
+                    <br>
+                    <li>
+                        Press the 'Add' button to make a new entry on your list.
+                    </li>
+                    <br>
+                    <li>
+                        You can scroll through the items you have just noted.
+                    </li>
+                </ul>
+            </h3>
+            <h1>What are the pros?</h1>
+            <h3>
+                <ul>
+                    <li>User friendly.</li>
+                    <br>
+                    <li>Works on the slowest possible internet connection.</li>
+                    <br>
+                    <li>Seamless performance.</li>
+                    <br>
+                    <li>Choose colors as per the importance of your note.</li>
+                </ul>
+            </h3>
+            <h1>What are the cons?</h1>
+            <h3>
+                Do not provide database syncing yet.
+            </h3>
+            <h1>Contact the Developer</h1>
+            <h3 id="developerInfo">
+                Name: ARPAN BHATTACHARYA
+                <br>
+                <br>
+                <a href="https://github.com/deathflicker">Github</a>
+                <br>
+                <br>
+                <a href="https://www.linkedin.com/in/arpan-bhattacharya-153359120/">Linkedin</a>
+                <br>
+                <br>
+                Mail: <a href="">bhattacharyada@gmail.com</a>
+                <br>
+                <br>
+                <a href="https://www.facebook.com/foreverArijit.1998/">Facebook</a>
+                <br>
+                <br>
+                <a href="https://twitter.com/__a_r_p_a_n__">Twitter</a>
+            </h3>
+            <br>
+        </div>
+
         <!-- App Logo-->
         <header>
             <a>L</a><label>ikho</label>
 
-            <h5 onclick="showAbout()" class="material-icons" style="font-size: 200%;">info</h5>
+            <h5 onclick="showAbout()" class="material-icons" style="font-size: 150%;">info</h5>
         </header>
 
         <!-- Top Menu-->
@@ -52,6 +118,8 @@
             <!--**********COLORS END**************-->
         
         </div>
+
+        <label onclick="showHelp()" style="float: right; margin-top: 2%; margin-right: 2%; font-family: sans-serif; font-size: 90%; color: darkred; text-decoration: underline;">Need Help?</label>
 
         <!--Allnotes Container-->
         <div id="allNotes" draggable="false" onscroll="expandNoteScroll()">

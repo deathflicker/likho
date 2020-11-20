@@ -3,6 +3,8 @@ let allNotes = document.getElementById('allNotes');
 let expandBtn = document.getElementById('expandBtn');
 let noteWrite = document.getElementById('noteWrite');
 let newNoteCont = document.getElementById('newNoteCont');
+let instructions = document.getElementById('instructions');
+let developerInfo = document.getElementById('developerInfo');
 let whatColor = '#2c3e50';
 let divId = 0;
 
@@ -89,5 +91,22 @@ function deleteCurrent(whichDiv){
 
 //Show my name
 function showAbout(){
-    window.location.href="https://www.linkedin.com/in/arpan-bhattacharya-153359120/";
+    instructions.style.height='100%'
+    instructions.style.transition='0s';
+    developerInfo.scrollIntoView();
+}
+
+
+
+//Show Help
+
+function showHelp(){
+    instructions.style.height = '100%';
+}
+
+//Hide Help
+
+function hideHelp(){
+    instructions.style.transition = '0.5s';
+    instructions.style.height = '0%';
 }
